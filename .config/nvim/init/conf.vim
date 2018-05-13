@@ -11,7 +11,7 @@ set gdefault
 set termguicolors
 set autoread
 set laststatus=2
-set clipboard=unnamed
+set clipboard=unnamedplus
 set whichwrap=b,s,h,l,<,>,[,]
 set hidden
 set showcmd
