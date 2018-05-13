@@ -21,3 +21,5 @@
   d3=diff HEAD~3
 [ghq]
   root=~/src
+[core]
+  editor=nvim
