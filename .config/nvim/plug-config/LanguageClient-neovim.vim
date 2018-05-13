@@ -2,6 +2,7 @@ let g:LanguageClient_autoStart = 1
 
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rls'],
+    \ 'cpp' : ['clangd'],
     \ }
 
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
