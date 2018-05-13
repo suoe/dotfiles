@@ -15,6 +15,7 @@ runtime! plug-config/denite.nvim.vim
 Plug 'Shougo/neomru.vim'
 runtime! plug-config/neomru.vim.vim
 Plug 'Shougo/neosnippet'
+runtime! plug-config/neosnippet.vim
 Plug 'Shougo/neosnippet-snippets'
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
