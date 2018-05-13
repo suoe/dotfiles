@@ -1,0 +1,23 @@
+[user]
+  name=sunao
+  email=sunaok.suoe@gmail.com
+[color]
+  ui=true
+[alias]
+  st=status
+  cm=commit
+  cam=commit --amend
+  cmm=commit -m
+  co=checkout
+  cb=checkout -b
+  b=branch
+  ba=branch -a
+  br=branch -r
+  p=push
+  alias=!git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
+  d=diff
+  d1=diff HEAD~
+  d2=diff HEAD~2
+  d3=diff HEAD~3
+[ghq]
+  root=~/src

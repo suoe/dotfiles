@@ -1,0 +1,15 @@
+/.config/*
+!/.config/alacritty/
+!/.config/nvim/
+!/.config/tmux/
+!/.config/zsh/
+/.config/zsh/.zcompdump
+!/.config/git/
+!/.config/tig/
+!/.config/fish/
+/.config/fish/fishd.*
+/.config/fish/conf.d/
+/.config/fish/completions/
+
+.netrwhist
+.DS_Store
