@@ -26,4 +26,6 @@ runtime! plug-config/LanguageClient-neovim.vim
 " fish script
 Plug 'dag/vim-fish', { 'for': 'fish' }
 
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+
 call plug#end()
