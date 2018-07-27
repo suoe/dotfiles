@@ -78,7 +78,7 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 15.0
+  size: 10.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -93,6 +93,12 @@ font:
     x: 0
     y: 0
 
+  # Scale the font size based on the monitor's DPI. This will lead to bigger text on HiDPI
+  # screens and make reading text a little easier.
+  # On X11 it is possible to change the DPI for each instance of alacritty by using
+  # `WINIT_HIDPI_FACTOR=1.0 alacritty` to scale the font.
+  scale_with_dpi: true
+
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
   # false.
@@ -105,7 +111,6 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: false
 
-# Colors (Tomorrow Night Bright)
 colors:
   # Default colors
   primary:
@@ -194,17 +199,17 @@ background_opacity: 1.0
 # - Paste
 # - PasteSelection
 # - Copy (TODO)
-# mouse_bindings:
-#   - { mouse: Middle, action: PasteSelection }
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
 
-# mouse:
+mouse:
   # Click settings
   #
   # The `double_click` and `triple_click` settings control the time
   # alacritty should wait for accepting multiple clicks as one double
   # or triple click.
-  #  double_click: { threshold: 300 }
-  #  triple_click: { threshold: 300 }
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
 
   # Faux Scrollback
   #
@@ -214,12 +219,12 @@ background_opacity: 1.0
   # scrolling for applications like `man`.
   #
   # To disable this completely, set `faux_scrollback_lines` to 0.
-  # faux_scrollback_lines: 1
+  faux_scrollback_lines: 1
 
-# selection:
-#   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
-# dynamic_title: true
+dynamic_title: true
 
 hide_cursor_when_typing: false
 
@@ -286,6 +291,8 @@ live_config_reload: true
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }
   - { key: C,        mods: Control|Shift,    action: Copy                }
+  - { key: Paste,                   action: Paste                        }
+  - { key: Copy,                    action: Copy                         }
   - { key: Q,        mods: Command, action: Quit                         }
   - { key: W,        mods: Command, action: Quit                         }
   - { key: Insert,   mods: Shift,   action: PasteSelection               }
