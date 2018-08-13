@@ -5,7 +5,7 @@ set guicursor=n-v:block-Cursor,
       \a:blinkwait100-blinkon200-blinkoff150
 
 set noswapfile
-set conceallevel=2 concealcursor=niv
+set conceallevel=0 concealcursor=niv
 set number
 set gdefault
 set termguicolors
@@ -16,17 +16,15 @@ set whichwrap=b,s,h,l,<,>,[,]
 set hidden
 set showcmd
 set showmatch
-set colorcolumn=80
-set cursorline
 set modeline
 
 " indent
 set autoindent
 set smartindent
 set expandtab
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
 
 " show invisible characters
 set list
