@@ -10,6 +10,9 @@
 /.config/fish/fishd.*
 /.config/fish/conf.d/
 /.config/fish/completions/
+!/.config/i3/
+!/.config/i3blocks/
+!/.config/rofi/
 
 .netrwhist
 .DS_Store

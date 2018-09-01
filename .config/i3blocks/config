@@ -1,0 +1,36 @@
+separator_block_width=14
+
+[volume]
+label=
+command=/usr/lib/i3blocks/volume
+color=#5fafaf
+signal=10
+interval=2
+
+[disk-root]
+label=:
+command=BLOCK_INSTANCE='/' /usr/lib/i3blocks/disk
+interval=30
+color=#AF5F5F
+
+[disk-home]
+label=:
+command=/usr/lib/i3blocks/disk
+interval=30
+color=#87AF87
+
+[battery]
+command=/usr/lib/i3blocks/battery
+interval=30
+
+[ssid]
+label=
+command=iw dev wlp5s0 link | grep SSID | cut -d " " -f 2-
+color=#5F8787
+interval=5
+
+[time]
+label=
+command=date '+%a %b %d %l:%M %p'
+interval=5
+color=#8FAFD7
